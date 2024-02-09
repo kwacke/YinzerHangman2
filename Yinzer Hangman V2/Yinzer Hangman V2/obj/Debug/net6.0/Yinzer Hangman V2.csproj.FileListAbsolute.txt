@@ -1,0 +1,14 @@
+C:\Users\Wacker\source\repos\Yinzer Hangman V2\Yinzer Hangman V2\obj\Debug\net6.0\Yinzer Hangman V2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Wacker\source\repos\Yinzer Hangman V2\Yinzer Hangman V2\obj\Debug\net6.0\Yinzer Hangman V2.AssemblyInfoInputs.cache
+C:\Users\Wacker\source\repos\Yinzer Hangman V2\Yinzer Hangman V2\obj\Debug\net6.0\Yinzer Hangman V2.AssemblyInfo.cs
+C:\Users\Wacker\source\repos\Yinzer Hangman V2\Yinzer Hangman V2\obj\Debug\net6.0\Yinzer Hangman V2.csproj.CoreCompileInputs.cache
+C:\Users\Wacker\source\repos\Yinzer Hangman V2\Yinzer Hangman V2\bin\Debug\net6.0\Yinzer Hangman V2.exe
+C:\Users\Wacker\source\repos\Yinzer Hangman V2\Yinzer Hangman V2\bin\Debug\net6.0\Yinzer Hangman V2.deps.json
+C:\Users\Wacker\source\repos\Yinzer Hangman V2\Yinzer Hangman V2\bin\Debug\net6.0\Yinzer Hangman V2.runtimeconfig.json
+C:\Users\Wacker\source\repos\Yinzer Hangman V2\Yinzer Hangman V2\bin\Debug\net6.0\Yinzer Hangman V2.dll
+C:\Users\Wacker\source\repos\Yinzer Hangman V2\Yinzer Hangman V2\bin\Debug\net6.0\Yinzer Hangman V2.pdb
+C:\Users\Wacker\source\repos\Yinzer Hangman V2\Yinzer Hangman V2\obj\Debug\net6.0\Yinzer Hangman V2.dll
+C:\Users\Wacker\source\repos\Yinzer Hangman V2\Yinzer Hangman V2\obj\Debug\net6.0\refint\Yinzer Hangman V2.dll
+C:\Users\Wacker\source\repos\Yinzer Hangman V2\Yinzer Hangman V2\obj\Debug\net6.0\Yinzer Hangman V2.pdb
+C:\Users\Wacker\source\repos\Yinzer Hangman V2\Yinzer Hangman V2\obj\Debug\net6.0\Yinzer Hangman V2.genruntimeconfig.cache
+C:\Users\Wacker\source\repos\Yinzer Hangman V2\Yinzer Hangman V2\obj\Debug\net6.0\ref\Yinzer Hangman V2.dll
