@@ -3,14 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Yinzer_Hangman_V2.Models;
+using Yinzer_Hangman_V2.Services;
 
 namespace Yinzer_Hangman_V2.Services
 {
     internal class GameServices
     {
-        internal void DisplayGameOutcome(string hidden, int incorrect)
+        internal void DisplayGameOutcome(string hidden, int incorrect, User user)
         {
-            if (hidden.Contains('*') && incorrect == 5)
+            if (hidden.Contains('*') && (incorrect == 5) || hidden != user.Answer)
             {
                 Console.WriteLine();
                 Console.WriteLine("Game over, ya Jag.");
@@ -34,12 +36,13 @@ namespace Yinzer_Hangman_V2.Services
             Console.WriteLine();
             AskToPlayAgain();
         }
-        internal void ResetGameVariables(int correct, int incorrect, bool hasLetter, string answer)
+        internal void ResetGameVariables(User user)
         {
-            correct = 0;
-            incorrect = 0;
-            hasLetter = false;
-            answer = "";
+            user.Correct = 0;
+            user.Incorrect = 0;
+            user.HasLetter = false;
+            user.Answer = "";
+            user.Guess = "";
         }
     }
 }

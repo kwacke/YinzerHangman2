@@ -12,15 +12,21 @@ namespace Yinzer_Hangman_V2.Models
         public int Correct { get; set; }
         public bool HasLetter { get; set; }
         public string Answer { get; set; }
+        public string Guess { get; set; }
         public string PlayAgain { get; set; }
 
-        public User(int incorrect = 0, int correct = 0, bool hasLetter = false, string answer = "", string playAgain = "")
+        public User(int incorrect = 0, int correct = 0, bool hasLetter = false, string answer = "", string playAgain = "", string guess = "")
         {
             Incorrect = incorrect;
             Correct = correct;
             HasLetter = hasLetter;
             Answer = answer;
             PlayAgain = playAgain;
+            Guess = guess;
+        }
+        public void IncrementIncorrect()
+        {
+            Incorrect++;
         }
 
     }

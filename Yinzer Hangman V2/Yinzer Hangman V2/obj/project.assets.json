@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Wacker\\source\\repos\\Yinzer Hangman V2\\Yinzer Hangman V2\\Yinzer Hangman V2.csproj",
+      "projectUniqueName": "C:\\Users\\Wacker\\source\\repos\\YinzerHangman2\\Yinzer Hangman V2\\Yinzer Hangman V2\\Yinzer Hangman V2.csproj",
       "projectName": "Yinzer Hangman V2",
-      "projectPath": "C:\\Users\\Wacker\\source\\repos\\Yinzer Hangman V2\\Yinzer Hangman V2\\Yinzer Hangman V2.csproj",
+      "projectPath": "C:\\Users\\Wacker\\source\\repos\\YinzerHangman2\\Yinzer Hangman V2\\Yinzer Hangman V2\\Yinzer Hangman V2.csproj",
       "packagesPath": "C:\\Users\\Wacker\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Wacker\\source\\repos\\Yinzer Hangman V2\\Yinzer Hangman V2\\obj\\",
+      "outputPath": "C:\\Users\\Wacker\\source\\repos\\YinzerHangman2\\Yinzer Hangman V2\\Yinzer Hangman V2\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Wacker\\AppData\\Roaming\\NuGet\\NuGet.Config",

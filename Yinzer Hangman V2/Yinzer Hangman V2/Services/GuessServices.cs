@@ -9,11 +9,11 @@ namespace Yinzer_Hangman_V2.Services
    
     public class GuessServices
     {
-        internal string GetUserGuess(string answer, string hidden)
+        internal string GetUserGuess(string answer, string hidden, User user)
         {
             Console.WriteLine();
             Console.WriteLine("Take a shot at guessin' a letter, 'er if yinz know it, spell out the whole word, 'er whatever");
-            return Console.ReadLine();
+            return user.Guess = Console.ReadLine();
         }
         internal bool IsSingleLetterGuess(string guess)
         {
@@ -21,53 +21,55 @@ namespace Yinzer_Hangman_V2.Services
         }
         internal bool IsFullWordGuess(string guess, string answer)
         {
-            return guess.Length > 1 && guess.Length == answer.Length;
+            return guess.Length > 1 || guess.Length == answer.Length;
         }
-        internal void HandleFullWordGuess(string answer, string hidden, int incorrect, string guess)
+        public string HandleFullWordGuess(string hidden, User user)
         {
-            string filteredGuess = FilterGuess(guess);
-            string filteredAnswer = FilterAnswer(answer);
+            string filteredGuess = FilterGuess(user);
+            string filteredAnswer = FilterAnswer(user);
 
             if (filteredGuess == filteredAnswer)
             {
                 Console.WriteLine();
-                Console.WriteLine($"Da answer is {answer}");
+                Console.WriteLine($"Da answer is {user.Answer}");
                 Console.WriteLine();
                 Console.WriteLine("You's won the game!");
                 Console.WriteLine();
-                //Environment.Exit(0); // Exit since they have won and the game is over. used to be break but this is needed now since outside of loop within method
+                
             }
             else
             {
                 Console.WriteLine("I'm sorry, that was an incorrect guess!");
                 Console.WriteLine($"{hidden}");
-                DrawHangman(incorrect);
+                user.IncrementIncorrect();
+                DrawHangman(user);
             }
+            return filteredGuess == filteredAnswer? user.Answer: hidden;
         }
-        internal string FilterGuess(string guess)
+        public string FilterGuess(User user)
         {
-            return new string(guess.ToLower().Where(c => Char.IsLetter(c) || c == ' ' || c == '\\' || c == '-' || c == ',' || c == '?' || c == '.' || c == '!').ToArray());
+            return new string(user.Guess.ToLower().Where(c => Char.IsLetter(c) || c == ' ' || c == '\\' || c == '-' || c == ',' || c == '?' || c == '.' || c == '!').ToArray());
         }
-        internal string FilterAnswer(string answer)
+        internal string FilterAnswer(User user)
         {
-            return new string(answer.ToLower().Where(c => Char.IsLetter(c) || c == ' ' || c == '\\' || c == '-' || c == ',' || c == '?' || c == '.' || c == '!').ToArray());
+            return new string(user.Answer.ToLower().Where(c => Char.IsLetter(c) || c == ' ' || c == '\\' || c == '-' || c == ',' || c == '?' || c == '.' || c == '!').ToArray());
         }
-        internal string HandleSingleLetterGuess(string answer, string hidden, bool hasLetter, int incorrect, string guess)
+        internal string HandleSingleLetterGuess(string answer, string hidden, bool hasLetter, User user)
         {
             //guess = GetUserGuess(answer, hidden);
 
             //if they guess incorrectly respond and increment the incorrect variable
-            if (!answer.ToLower().Contains(char.ToLower(guess[0])))
+            if (!answer.ToLower().Contains(char.ToLower(user.Guess[0])))
             {
                 Console.WriteLine();
                 Console.WriteLine("The word ain't gat that letter!");
-                incorrect++;
-                DrawHangman(incorrect);
+                user.IncrementIncorrect(); // Increment the Incorrect property of the User object
+                DrawHangman(user);
                 Console.WriteLine();
-                Console.WriteLine($"Yinz made {incorrect} tries, 'n'at. Still got {5 - incorrect} tries left, y'know.");
+                Console.WriteLine($"Yinz made {user.Incorrect} tries, 'n'at. Still got {5 - user.Incorrect} tries left, y'know.");
                 Console.WriteLine();
                 Console.WriteLine($"{hidden}");
-                if (incorrect == 5)
+                if (user.Incorrect == 5)
                 {
                     Console.WriteLine();
                     Console.WriteLine("Game over.");
@@ -80,8 +82,8 @@ namespace Yinzer_Hangman_V2.Services
                 int numberOfTimes = 0;
 
                 /* create a CharArray to hold letters asterisk and reveal them 
-                 as we loop through the length of answer checking if the guesses are in each index
-                position of answer*/
+                    as we loop through the length of answer checking if the guesses are in each index
+                    position of answer*/
 
                 char[] reveal = hidden.ToCharArray();
 
@@ -89,12 +91,12 @@ namespace Yinzer_Hangman_V2.Services
                 {
                     // this checks if your guess is in the word
                     // then reveals that letter as many times as it appears in the word
-                    if ((char.ToLower(guess[0]) == char.ToLower(answer[i])))
+                    if ((char.ToLower(user.Guess[0]) == char.ToLower(answer[i])))
                     {
                         hasLetter = true;
                         numberOfTimes++;
 
-                        if (!hidden.Contains(char.ToLower(guess[0])))
+                        if (!hidden.Contains(char.ToLower(user.Guess[0])))
                         {
                             reveal[i] = answer[i];
                         }
@@ -103,7 +105,7 @@ namespace Yinzer_Hangman_V2.Services
                 Console.WriteLine();
                 // if you guess correctly and haven't guessed all of the letters
                 /* I added the number of times so that if the letter appears multiple
-                in the word, it will only Console.WriteLine one time */
+                    in the word, it will only Console.WriteLine one time */
                 if (hasLetter)
                 {
                     Console.WriteLine("Spot on, n'at!");
@@ -122,11 +124,11 @@ namespace Yinzer_Hangman_V2.Services
             }
             return hidden;
         }
-        public int DrawHangman(int step)
+        public User DrawHangman(User user)
         {
             Console.WriteLine();
 
-            switch (step)
+            switch (user.Incorrect)
             {   //Case number = incorrect guess amount
                 case 1:
                     Console.WriteLine("  ____ ");
@@ -169,7 +171,7 @@ namespace Yinzer_Hangman_V2.Services
                     Console.WriteLine("Invalid step number.");
                     break;
             }
-            return step;
+            return user;
         }
 
     }

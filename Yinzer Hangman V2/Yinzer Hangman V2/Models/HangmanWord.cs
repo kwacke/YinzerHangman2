@@ -10,5 +10,10 @@ namespace Yinzer_Hangman_V2.Models
     {
         public string Word { get; set; }
         public string Hint { get; set;}
+    HangmanWord(string word, string hint)
+    {
+            Word = word;
+            Hint = hint;
+    }
     }
 }

@@ -10,6 +10,7 @@ namespace Yinzer_Hangman_V2
 {
     public class YinzerApp
     {
+        
         WordServices wordServices = new WordServices();
         User user = new User();
         GuessServices guessServices = new GuessServices();
@@ -17,7 +18,6 @@ namespace Yinzer_Hangman_V2
 
         public void Run()
         {
-
             Console.WriteLine("Hey yinz, gather 'round! We got ourselves a real n'at hangman game goin' on.");
             Console.WriteLine("It's a proper Pittsburgh puzzler, so grab yer pop, kick back, and let's see if yinz can guess the words.");
             Console.WriteLine("Ready to tackle this Pittsburgh hangman, ya jagoffs?");
@@ -37,27 +37,26 @@ namespace Yinzer_Hangman_V2
                 // makes sure that you haven't guessed the word or run out of guesses
                 while (hidden.Contains('*') && user.Incorrect < 5)
                 {
-                    string guess = guessServices.GetUserGuess(user.Answer, hidden);
+                    user.Guess = guessServices.GetUserGuess(user.Answer, hidden, user);
 
-                    if (guessServices.IsFullWordGuess(guess, user.Answer))
+                    if (guessServices.IsFullWordGuess(user.Guess, user.Answer))
                     {
-                        guessServices.HandleFullWordGuess(user.Answer, hidden, user.Incorrect, guess);
-                        break;
+                            hidden = guessServices.HandleFullWordGuess(hidden, user); 
                     }
-                    // User chose not to play again, exit the screen.ea
-                    else if (guessServices.IsSingleLetterGuess(guess))
+                    else if (guessServices.IsSingleLetterGuess(user.Guess))
                     {
-                        hidden = guessServices.HandleSingleLetterGuess(user.Answer, hidden, user.HasLetter, user.Incorrect, guess);
+                        hidden = guessServices.HandleSingleLetterGuess(user.Answer, hidden, user.HasLetter, user);
+          
                     }
 
                 }
-                gs.DisplayGameOutcome(hidden, user.Incorrect);
+                gs.DisplayGameOutcome(hidden, user.Incorrect, user);
                 user.PlayAgain = gs.AskToPlayAgain();
 
                 // this loop condition is needed to start the game over again after selecting yes to play again
                 if (user.PlayAgain.ToLower() == "y" || user.PlayAgain.ToLower() == "yes")
                 {
-                    gs.ResetGameVariables(user.Correct, user.Incorrect, user.HasLetter, user.Answer);
+                    gs.ResetGameVariables(user);
                 }
                 else if (user.PlayAgain.ToLower() == "n" || user.PlayAgain.ToLower() == "no")
                 {

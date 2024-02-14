@@ -86,8 +86,9 @@ namespace Yinzer_Hangman_V2.Services
             {"Sick'n tard", "Sick and tired"},
             {"Sposda", "Supposed to"},
             {"bungals", "Slang for Cincinatti's football team"},
-            {"brahns", "Brown shoes"},
-            {"Ya Gatta Regatta!", "You have to attend the regatta"}
+            {"brahns", "Slang for Cleveland's NFL team" },
+            {"Ya Gatta Regatta!", "You have to attend the regatta"},
+            {"Renegade", "Unofficial Pittsburgh Steelers anthem" }
             };
             return yinzWords;
         }
