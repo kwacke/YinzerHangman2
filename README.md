@@ -21,7 +21,7 @@ dotnet run
 
 Follow the on-screen instructions to play the Yinzer Hangman game.
 
-###Gameplay
+Gameplay
 The game selects a random Pittsburghese word or phrase. Some of these are easy while others are quite challenging, especially for none Pittsburghers and sports haters and people who are good spellers.
 You have five chances to guess the word by either guessing letter by letter or the entire word or phrase including all of the proper spaces and punctuation.
 The game displays a hangman figure for incorrect guesses, it builds each section of the hangman drawing based on how many incorrect attempts you make.
@@ -33,16 +33,18 @@ Modify game rules and structure in the code.
 Contributing
 Contributions are welcome! Open an issue or submit a pull request.
 
-###License
+License
 This project is licensed under the MIT License.
 
-###Acknowledgments
+Acknowledgments
 Thanks to fellow Yinzers and their wonderful dialect.
-Thanks to Tech Elevator for teaching me how to code.
-###Motivation
+Thanks to Tech Elevator and Tom Anderson for teaching me how to code.
+Thanks to Margaret Green for advice and motivation
+
+Motivation
 I built Yinzer Hangman for fun and as a meaningful addition to my portfolio, aiming to showcase my skills and passion during my job search.
 
-###Version 3 (Work in Progress)
+Version 3 (Work in Progress)
 I'm currently working on version 3 of Yinzer Hangman, which will be a web-based version developed using Vue.js. Stay tuned for updates!
 
 Feel free to adjust or expand upon this README as needed for your project! But don't yinz go an ruin it!
