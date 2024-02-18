@@ -70,7 +70,7 @@ namespace Yinzer_Hangman_V2
 
             } while (user.PlayAgain.ToLower() == "y" || user.PlayAgain.ToLower() == "yes");
 
-            //GetRandomWord, Hideword, and DisplayWordHint methods were here now in WordServices class
+
         }
 
     }

@@ -8,7 +8,7 @@ using Yinzer_Hangman_V2.Services;
 
 namespace Yinzer_Hangman_V2.Services
 {
-    internal class GameServices
+    public class GameServices
     {
         internal void DisplayGameOutcome(string hidden, int incorrect, User user)
         {
@@ -20,7 +20,7 @@ namespace Yinzer_Hangman_V2.Services
             }
 
         }
-        internal string AskToPlayAgain()
+        public string AskToPlayAgain()
         {
             // This runs after you have guessed the word or have ran out of guesses
 
@@ -30,13 +30,13 @@ namespace Yinzer_Hangman_V2.Services
             Console.WriteLine();
             return Console.ReadLine();
         }
-        internal void HandleInvalidPlayAgainInput()
+        public void HandleInvalidPlayAgainInput()
         {
             Console.WriteLine("I'm sorry 'n'at, but could yinz please enter a Y to play again or an N to exit, jagoff");
             Console.WriteLine();
             AskToPlayAgain();
         }
-        internal void ResetGameVariables(User user)
+        public void ResetGameVariables(User user)
         {
             user.Correct = 0;
             user.Incorrect = 0;

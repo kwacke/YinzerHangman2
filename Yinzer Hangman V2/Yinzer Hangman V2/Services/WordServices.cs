@@ -92,18 +92,18 @@ namespace Yinzer_Hangman_V2.Services
             };
             return yinzWords;
         }
-        internal string GetRandomWord(Dictionary<string, string> wordDictionary)
+        public string GetRandomWord(Dictionary<string, string> wordDictionary)
         {
             //Selects random KVP from our Dictionary and take the key and turn it into string answer
             var random = new Random();
             var selectedWord = wordDictionary.ElementAt(random.Next(wordDictionary.Count));
             return selectedWord.Key;
         }
-        internal string HideWord(string word)
+        public string HideWord(string word)
         {
             return new string(word.Select(c => Char.IsLetter(c) ? '*' : c == ' ' || c == '\'' || c == '-' || c == ',' || c == '?' || c == '.' ? c : ' ').ToArray());
         }
-        internal void DisplayWordHint(string word, string hidden, string hint)
+        public void DisplayWordHint(string word, string hidden, string hint)
         {
             Console.WriteLine($"Hint: {hint}: {hidden}");
             Console.WriteLine($"The word is {word.Length} letters");

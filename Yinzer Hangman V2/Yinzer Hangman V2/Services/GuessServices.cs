@@ -9,17 +9,17 @@ namespace Yinzer_Hangman_V2.Services
    
     public class GuessServices
     {
-        internal string GetUserGuess(string answer, string hidden, User user)
+        public string GetUserGuess(string answer, string hidden, User user)
         {
             Console.WriteLine();
             Console.WriteLine("Take a shot at guessin' a letter, 'er if yinz know it, spell out the whole word, 'er whatever");
             return user.Guess = Console.ReadLine();
         }
-        internal bool IsSingleLetterGuess(string guess)
+        public bool IsSingleLetterGuess(string guess)
         {
             return guess.Length == 1;
         }
-        internal bool IsFullWordGuess(string guess, string answer)
+        public bool IsFullWordGuess(string guess, string answer)
         {
             return guess.Length > 1 || guess.Length == answer.Length;
         }
@@ -50,11 +50,11 @@ namespace Yinzer_Hangman_V2.Services
         {
             return new string(user.Guess.ToLower().Where(c => Char.IsLetter(c) || c == ' ' || c == '\\' || c == '-' || c == ',' || c == '?' || c == '.' || c == '!').ToArray());
         }
-        internal string FilterAnswer(User user)
+        public string FilterAnswer(User user)
         {
             return new string(user.Answer.ToLower().Where(c => Char.IsLetter(c) || c == ' ' || c == '\\' || c == '-' || c == ',' || c == '?' || c == '.' || c == '!').ToArray());
         }
-        internal string HandleSingleLetterGuess(string answer, string hidden, bool hasLetter, User user)
+        public string HandleSingleLetterGuess(string answer, string hidden, bool hasLetter, User user)
         {
             //guess = GetUserGuess(answer, hidden);
 

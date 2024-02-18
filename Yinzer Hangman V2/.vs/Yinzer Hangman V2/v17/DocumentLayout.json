@@ -1,0 +1,89 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Wacker\\source\\repos\\YinzerHangman2\\Yinzer Hangman V2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1B63775A-77F8-4671-8D3A-B1076F300994}|Yinzer Hangman V2\\Yinzer Hangman V2.csproj|c:\\users\\wacker\\source\\repos\\yinzerhangman2\\yinzer hangman v2\\yinzer hangman v2\\yinzerapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B63775A-77F8-4671-8D3A-B1076F300994}|Yinzer Hangman V2\\Yinzer Hangman V2.csproj|solutionrelative:yinzer hangman v2\\yinzerapp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B63775A-77F8-4671-8D3A-B1076F300994}|Yinzer Hangman V2\\Yinzer Hangman V2.csproj|c:\\users\\wacker\\source\\repos\\yinzerhangman2\\yinzer hangman v2\\yinzer hangman v2\\services\\wordservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B63775A-77F8-4671-8D3A-B1076F300994}|Yinzer Hangman V2\\Yinzer Hangman V2.csproj|solutionrelative:yinzer hangman v2\\services\\wordservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B63775A-77F8-4671-8D3A-B1076F300994}|Yinzer Hangman V2\\Yinzer Hangman V2.csproj|c:\\users\\wacker\\source\\repos\\yinzerhangman2\\yinzer hangman v2\\yinzer hangman v2\\services\\guessservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B63775A-77F8-4671-8D3A-B1076F300994}|Yinzer Hangman V2\\Yinzer Hangman V2.csproj|solutionrelative:yinzer hangman v2\\services\\guessservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B63775A-77F8-4671-8D3A-B1076F300994}|Yinzer Hangman V2\\Yinzer Hangman V2.csproj|c:\\users\\wacker\\source\\repos\\yinzerhangman2\\yinzer hangman v2\\yinzer hangman v2\\services\\gameservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B63775A-77F8-4671-8D3A-B1076F300994}|Yinzer Hangman V2\\Yinzer Hangman V2.csproj|solutionrelative:yinzer hangman v2\\services\\gameservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "YinzerApp.cs",
+              "DocumentMoniker": "C:\\Users\\Wacker\\source\\repos\\YinzerHangman2\\Yinzer Hangman V2\\Yinzer Hangman V2\\YinzerApp.cs",
+              "RelativeDocumentMoniker": "Yinzer Hangman V2\\YinzerApp.cs",
+              "ToolTip": "C:\\Users\\Wacker\\source\\repos\\YinzerHangman2\\Yinzer Hangman V2\\Yinzer Hangman V2\\YinzerApp.cs",
+              "RelativeToolTip": "Yinzer Hangman V2\\YinzerApp.cs",
+              "ViewState": "AQIAADMAAAAAAAAAAADwv0gAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T17:48:13.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WordServices.cs",
+              "DocumentMoniker": "C:\\Users\\Wacker\\source\\repos\\YinzerHangman2\\Yinzer Hangman V2\\Yinzer Hangman V2\\Services\\WordServices.cs",
+              "RelativeDocumentMoniker": "Yinzer Hangman V2\\Services\\WordServices.cs",
+              "ToolTip": "C:\\Users\\Wacker\\source\\repos\\YinzerHangman2\\Yinzer Hangman V2\\Yinzer Hangman V2\\Services\\WordServices.cs",
+              "RelativeToolTip": "Yinzer Hangman V2\\Services\\WordServices.cs",
+              "ViewState": "AQIAAFYAAACAMjMzMzMqwGkAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T17:47:46.685Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GuessServices.cs",
+              "DocumentMoniker": "C:\\Users\\Wacker\\source\\repos\\YinzerHangman2\\Yinzer Hangman V2\\Yinzer Hangman V2\\Services\\GuessServices.cs",
+              "RelativeDocumentMoniker": "Yinzer Hangman V2\\Services\\GuessServices.cs",
+              "ToolTip": "C:\\Users\\Wacker\\source\\repos\\YinzerHangman2\\Yinzer Hangman V2\\Yinzer Hangman V2\\Services\\GuessServices.cs",
+              "RelativeToolTip": "Yinzer Hangman V2\\Services\\GuessServices.cs",
+              "ViewState": "AQIAAJ8AAAAAAQAAAAAlwDgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T17:47:16.507Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameServices.cs",
+              "DocumentMoniker": "C:\\Users\\Wacker\\source\\repos\\YinzerHangman2\\Yinzer Hangman V2\\Yinzer Hangman V2\\Services\\GameServices.cs",
+              "RelativeDocumentMoniker": "Yinzer Hangman V2\\Services\\GameServices.cs",
+              "ToolTip": "C:\\Users\\Wacker\\source\\repos\\YinzerHangman2\\Yinzer Hangman V2\\Yinzer Hangman V2\\Services\\GameServices.cs",
+              "RelativeToolTip": "Yinzer Hangman V2\\Services\\GameServices.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-18T17:46:43.902Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
